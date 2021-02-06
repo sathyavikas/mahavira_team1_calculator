@@ -28,13 +28,20 @@ char back=0;
                     //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
                     //scanf(" %c", &back);
                     break;
-            case 5:///difference_of_days();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 5: datescalc();
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
-            case 6: //leap_year();
-                    //printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
-                    //scanf(" %c", &back);
+            case 6: 
+                    int yyy;
+                    printf("enter the year");
+                    scanf("%d",&yyy)
+                    if(1==leapyear(yyy))
+                    printf("leap year");
+                    else
+                    printf("not a leap year");
+                    printf("\n\n\n PRESS Y - SAME Menu    PRESS N - MAIN Menu\n");
+                    scanf(" %c", &back);
                     break;
         }
     }while(back!= 'N');
